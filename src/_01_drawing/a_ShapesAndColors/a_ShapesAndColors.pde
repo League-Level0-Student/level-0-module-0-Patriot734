@@ -1,18 +1,48 @@
 // 1. Run this empty program 
 // The grey square that appears has sides that are 100 pixels long
+void setup()
+{
+size (800,800);
 
+
+}
+void draw()
+{
+  int x = 700;
 // 2. Code a size command to make it big enough for your picture
 
 //    The size command looks like this:      
-  size (100,200);
+
 //    Try putting different numbers in the parentheses.
 //    See if you can figure out which number is the width, and which is the height
-
+background(#FFA850);
 
 // 3. Now add an ellipse command to draw a circle. An ellipse is like an oval.
 
 //    The ellipse command looks like this:      
- ellipse(250,250, 100,100);
+ fill(#FFFFFF);
+ ellipse(400,200, 200,200);
+ ellipse(400,400, 250,250);
+ ellipse(400,600, 300,300);
+
+ 
+ 
+ fill(#0A0000);
+ ellipse(450,180, 30,30);
+ ellipse(350,180, 30,30);
+ ellipse(400,700, 20,20);
+ while(x >= 300)
+ {
+   ellipse(400,x, 20,20);
+   x = x - 50;
+ }
+ rect(300,70, 200,50);
+ rect(350,-100, 100,200);
+ fill(#FF8D00);
+ triangle(380,210,420,210,400,250);
+ 
+ 
+ 
 //    The first 2 numbers specify where to draw it. They are the x and y co-ordinates of the center of the ellipse.
 //    The third and fourth numbers are the size of the ellipse.
 //    The width is specified before the height. If they are the same, it draws a circle
@@ -21,7 +51,7 @@
 // 4. Now add a rect command to draw a rectangle.
 
 //    The rect command looks like this:       
-rect(250,250, 100,100);
+
 
 //    Like the ellipse, the fist 2 numbers specify where to draw it, the other two are its size.
 //    The main difference is the x and y co-ordinates are the top left corner of the shape.
@@ -46,3 +76,4 @@ fill(#FFA850);
 // 7. Now use all these shapes and colors to draw a picture of your own design. 
 
 // MAKE SURE YOU SAVE YOUR CODE 
+}
